@@ -24,6 +24,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+#gem 'pg', '>= 0.18'
 
 group :development, :test do
   gem 'sqlite3'
@@ -31,7 +32,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg', '>= 0.18'
+  #gem 'pg', '>= 0.18'
 end
 
 gem 'faker'
