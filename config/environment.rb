@@ -5,11 +5,20 @@ require_relative 'application'
 Rails.application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-    :user_name => ENV['SENDGRID_LOGIN'],
-    :password => ENV['SENDGRID_PWD'],
+    :user_name => ENV['apikey'],
+    :password => ENV['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'],
     :domain => 'solartech971.com',
     :address => 'smtp.sendgrid.net',
     :port => 587,
     :authentication => :plain,
     :enable_starttls_auto => true
   }
+
+#ActionMailer::Base.smtp_settings =   {
+#    :address            => 'smtp.gmail.com',
+#    :port               => 587,
+#    :domain             => 'gmail.com', #you can also use google.com
+#    :authentication     => :plain,
+#    :user_name          => ENV['GMAIL_LOGIN'],
+#    :password           => ENV['GMAIL_PWD']
+#  }
