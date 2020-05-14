@@ -110,6 +110,8 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
+  config.active_record.dump_schema_after_migration = false
+
   config.action_mailer.default_url_options = { :host => 'heroku git:remote -a eventbritelaurent' }
 
 
